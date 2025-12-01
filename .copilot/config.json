@@ -1,0 +1,29 @@
+{
+  "commands": [
+    {
+      "name": "Audit Extensions",
+      "description": "Audit VS Code extensions for activation events and telemetry",
+      "prompt": "Run PowerShell script to audit VS Code extensions from D:\\dev\\tools\\audit-extensions.ps1"
+    },
+    {
+      "name": "Devcontainer Check",
+      "description": "Validate devcontainer.json for whitelisted extensions and pinned features",
+      "prompt": "Run audit script from D:\\dev\\tools\\validate-devcontainer.ps1 and summarize findings"
+    },
+    {
+      "name": "CI/CD Policy Scan",
+      "description": "Scan GitHub repo for CI/CD policy compliance",
+      "prompt": "Use D:\\dev\\tools\\ci-policy-check.ps1 to scan workflows and report violations"
+    },
+    {
+      "name": "Onboarding Doc Generator",
+      "description": "Generate onboarding documentation for new developers",
+      "prompt": "Create Markdown onboarding guide using templates from D:\\dev\\tools\\onboarding\\"
+    },
+    {
+      "name": "Container Hardening",
+      "description": "Review Docker Desktop settings and shared paths",
+      "prompt": "Run D:\\dev\\tools\\docker-harden.ps1 and summarize security recommendations"
+    }
+  ]
+}

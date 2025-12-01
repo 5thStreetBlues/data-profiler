@@ -1,0 +1,64 @@
+# Line ending configuration for eod-data-etl repository
+# Enforces LF line endings across all platforms for consistency
+
+# Auto-detect text files and normalize to LF
+* text=auto eol=lf
+
+# Source code files - LF
+*.py text eol=lf
+*.sh text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+
+# Configuration files - LF
+*.json text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+Dockerfile text eol=lf
+*.Dockerfile text eol=lf
+*.code-workspace text eol=lf
+
+# Documentation - LF
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Data files - LF
+*.csv text eol=lf
+*.xml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+
+# Windows-specific files - CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files - no conversion
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg binary
+*.ico binary
+*.pdf binary
+*.parquet binary
+*.db binary
+*.sqlite binary
+*.pyc binary
+*.pyd binary
+*.so binary
+*.dll binary
+*.exe binary
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Diff handling
+*.lock -diff
+*.log -diff

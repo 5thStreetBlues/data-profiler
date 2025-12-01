@@ -1,0 +1,50 @@
+# This is a TOML configuration file for an application.
+
+# Key-value pairs define primitive types.
+# Strings are enclosed in double quotes.
+title = "Data Profiler"
+version = "1.0.0"
+
+# Booleans are lowercase.
+debug_mode = true
+
+# Integers and floats are unquoted.
+port = 8080
+pi_value = 3.14159
+
+# Arrays are defined with square brackets.
+allowed_hosts = ["localhost", "127.0.0.1", "::1"]
+
+# Comments can be placed anywhere using the '#' symbol.
+
+# [tables] group related configuration settings.
+# A table is essentially a hash map or dictionary.
+[database]
+type = "postgres"
+host = "localhost"
+user = "admin"
+password = "super_secret_password"
+
+# Nested tables can be created using a dot notation.
+[database.connection]
+timeout = 5000 # in milliseconds
+max_retries = 3
+
+# [[arrays of tables]]
+# This is useful for collections of structured data,
+# like a list of users or multiple server configurations.
+[[servers]]
+name = "production"
+host = "prod.example.com"
+port = 443
+
+[[servers]]
+name = "staging"
+host = "staging.example.com"
+port = 8081
+
+# Inline tables provide a compact syntax for small, simple tables.
+# This is an alternative to the multi-line [table] syntax.
+[user]
+name = { first = "Jane", last = "Doe" }
+location = { city = "New York", country = "USA" }

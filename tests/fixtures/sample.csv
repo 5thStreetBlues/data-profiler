@@ -1,0 +1,11 @@
+id,name,amount,created_at,is_active,category
+1,Alice,100.50,2024-01-15,true,A
+2,Bob,200.75,2024-02-20,false,B
+3,Charlie,150.00,2024-03-10,true,A
+4,Diana,300.25,2024-04-05,true,C
+5,Eve,250.00,2024-05-01,false,B
+6,Frank,,2024-06-15,true,A
+7,Grace,175.50,2024-07-20,,C
+8,Henry,225.00,2024-08-25,true,
+9,Ivy,125.75,2024-09-30,false,B
+10,Jack,350.00,2024-10-15,true,A
