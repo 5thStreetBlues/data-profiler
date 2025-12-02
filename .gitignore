@@ -34,6 +34,20 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# non project directories
+logs/
+.devcontainer/
+.vscode/
+.ignore/
+.scratchpad/
+
+# non project files
+SESSION_CONTEXT*.md
+.context/sessions/
+.claude/settings.local.json
+.claude/docs/
+.editorconfig
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
