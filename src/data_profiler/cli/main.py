@@ -151,6 +151,11 @@ def _create_profile_parser(
         metavar="FILE",
         help="configuration file (JSON format)",
     )
+    input_group.add_argument(
+        "--no-schema-check",
+        action="store_true",
+        help="disable schema consistency checking (useful for heterogeneous directories)",
+    )
 
     # Output options
     output_group = profile_parser.add_argument_group("output options")
@@ -393,6 +398,7 @@ def run_profile(args: argparse.Namespace) -> ExitCode:
             dataset = profiler.profile_directory(
                 dir_path,
                 recursive=args.recursive,
+                check_schema_consistency=not getattr(args, "no_schema_check", False),
             )
             dataset_profiles.append(dataset)
         except Exception as e:
